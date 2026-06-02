@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nikhil Madpuwar Chaiwala</title>
+    <meta
+      name="description"
+      content="A modern tea business web app for showcasing blends, tea rituals, and customer orders."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+        <a class="brand" href="#top">Golden Leaf</a>
+        <div class="nav-links">
+          <a href="#menu">Menu</a>
+          <a href="#story">Our Story</a>
+          <a href="#contact">Order</a>
+        </div>
+      </nav>
+
+      <section class="hero-grid container" id="top">
+        <article class="hero-copy">
+          <p class="eyebrow">Fresh tea • Hand blended • Customer favorite</p>
+          <h1>Nikhil Madpuwar Chaiwala</h1>
+          <p class="lead">
+            Welcome to Golden Leaf Tea House — a friendly tea business site created to help your customers
+            explore blends, place orders, and connect with your brand online.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#contact">Start an Order</a>
+            <a class="btn btn-secondary" href="#menu">Browse Tea Menu</a>
+          </div>
+          <ul class="mini-stats">
+            <li><strong>12+</strong> signature blends</li>
+            <li><strong>100%</strong> natural ingredients</li>
+            <li><strong>Same-day</strong> local delivery</li>
+          </ul>
+        </article>
+
+        <aside class="hero-card" aria-label="Tea showcase card">
+          <div class="badge">Today’s Pick</div>
+          <h2>Masala Glow Tea</h2>
+          <p>Black tea, cinnamon, ginger, and cardamom with a rich warming finish.</p>
+          <div class="tea-tags">
+            <span>Spiced</span>
+            <span>Comfort</span>
+            <span>Morning Boost</span>
+          </div>
+          <div class="price-row">
+            <strong>₹180 / 100g</strong>
+            <button class="btn btn-primary small" type="button">Add to cart</button>
+          </div>
+        </aside>
+      </section>
+    </header>
+
+    <main>
+      <section class="container section" id="menu">
+        <div class="section-heading">
+          <p class="eyebrow">Featured menu</p>
+          <h2>Tea blends for every mood</h2>
+        </div>
+        <div class="card-grid three-up">
+          <article class="card">
+            <h3>Mint Serenity</h3>
+            <p>Cooling peppermint, lemongrass, and a soft green tea base.</p>
+            <span>Best for evening calm</span>
+          </article>
+          <article class="card">
+            <h3>Golden Chai</h3>
+            <p>Classic chai spice with roasted cardamom and sweet clove notes.</p>
+            <span>Best for cozy mornings</span>
+          </article>
+          <article class="card">
+            <h3>Berry Bloom</h3>
+            <p>Fruit-forward hibiscus with berry accents and floral balance.</p>
+            <span>Best for refreshment</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="container section alt" id="story">
+        <div class="split-grid">
+          <article>
+            <p class="eyebrow">Why customers love us</p>
+            <h2>Small-batch tea, brewed with care</h2>
+            <p>
+              Every blend is crafted in small batches to preserve fragrance, color, and flavor. Our tea house
+              focuses on quality, hospitality, and a memorable customer experience.
+            </p>
+          </article>
+          <article class="quote-box">
+            “A cup of tea is a small ritual that changes the whole day.”
+          </article>
+        </div>
+      </section>
+
+      <section class="container section">
+        <div class="section-heading">
+          <p class="eyebrow">What people say</p>
+          <h2>Customer favorites</h2>
+        </div>
+        <div class="card-grid three-up">
+          <article class="card testimonial">
+            <p>“The flavors are rich and the packaging feels premium. I ordered for my office and everyone loved it.”</p>
+            <strong>— Priya, Bangalore</strong>
+          </article>
+          <article class="card testimonial">
+            <p>“Very easy to browse and place an order. The tea tastes fresh and aromatic every single time.”</p>
+            <strong>— Arjun, Pune</strong>
+          </article>
+          <article class="card testimonial">
+            <p>“Beautiful site and lovely blends. It feels warm, simple, and professional for a tea business.”</p>
+            <strong>— Meera, Hyderabad</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="container section alt" id="contact">
+        <div class="contact-grid">
+          <article>
+            <p class="eyebrow">Order & contact</p>
+            <h2>Ready to serve your customers online?</h2>
+            <p>
+              Use this section to collect customer inquiries, custom tea orders, or wholesale requests.
+            </p>
+            <ul class="contact-list">
+              <li>📍 24 Tea Lane, City Center</li>
+              <li>📞 +91 98765 43210</li>
+              <li>✉️ hello@goldenleaftea.com</li>
+            </ul>
+          </article>
+
+          <form class="contact-card" id="orderForm">
+            <label>
+              Name
+              <input type="text" id="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Tea preference
+              <input type="text" id="tea" placeholder="Masala Glow / Mint Serenity" required />
+            </label>
+            <label>
+              Quantity
+              <input type="number" id="qty" min="1" value="1" required />
+            </label>
+            <label>
+              Contact number
+              <input type="tel" id="phone" placeholder="98765 43210" required />
+            </label>
+            <button class="btn btn-primary full" type="submit">Submit Order Inquiry</button>
+            <p class="form-note" id="formMessage">We’ll contact you soon with pricing and delivery details.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-row">
+        <p>© 2026 Golden Leaf Tea House. Crafted for tea lovers.</p>
+        <a href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
